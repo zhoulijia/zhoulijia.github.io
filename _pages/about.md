@@ -1,24 +1,29 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
-description: <a href="#">Affiliations</a>. Address. Contacts. Moto. Etc.
+description: 
 
 profile:
   align: right
   image: prof_pic.jpg
   address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Office: Jones 203B</p>
+    <p>5747 South Ellis Avenue</p>
+    <p>Chicago, IL 60637</p>
 
-news: true  # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
+news: false  # includes a list of news items
 social: true  # includes social icons at the bottom of the page
+selected_papers: false # includes a list of papers marked as "selected={true}"
+
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com){:target="\_blank"}. You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a third-year Ph.D. student in the <a href="https://stat.uchicago.edu/">Department of Statistics at the University of Chicago,</a> advised by Professor <a href="https://home.ttic.edu/~nati/"> Nathan Srebro. </a> 
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I am interested in the statistical foundation of machine learning. With the hope of bridging the gap between the classical statistical learning theory with modern practices in data science, I have been trying to understand how over-parameterized models that memorize the training data (such as a deep neural network) can generalize to unseen data through the prism of <i> implicit regularization </i> and <i> uniform convergence.</i> I am also broadly interested in federated learning and differential privacy.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/){:target="\_blank"} and [Academicons](https://jpswalsh.github.io/academicons/){:target="\_blank"}, like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Prior to my gradute study, I was an undergraduate student majoring in Applied Mathematics (B.S.) and Staistics (B.S.) at the University of Chicago. I had the pleasure of working with Professor <a href="https://galton.uchicago.edu/~stein/"> Michael Stein </a> on spatio-temporal modeling of Ozone Monitoring Instrument (OMI) data. 
+
+I was born and raised in <a href="https://en.wikipedia.org/wiki/Guangzhou"> Guangzhou, China. </a> I speak Mandarin and <a href ="https://en.wikipedia.org/wiki/Cantonese"> Cantonese,</a> and I also understand the <a href="https://en.wikipedia.org/wiki/Chaoshan"> Chaoshan </a> dialect. 
+
+
