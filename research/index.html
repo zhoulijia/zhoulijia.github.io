@@ -12,7 +12,7 @@
   Lijia  Zhou (周里佳)
 
 
-  | research
+  | 
 
 </title>
 <meta name="description" content="Personal website for Lijia Zhou (周里佳).
@@ -78,54 +78,27 @@
               
             </a>
           </li>
-          <!-- Research -->
-          <li class="nav-item active">
-            <a class="nav-link" href="/research">
-              research
-              
-                <span class="sr-only">(current)</span>
+          <!-- publications -->
+          <li class="nav-item ">
+            <a class="nav-link" href="/publications">
+              publications
               
             </a>
           </li>
-          <!-- Other pages -->
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
+          <!-- news -->
           <li class="nav-item ">
-              <a class="nav-link" href="/publications/">
-                publications
-                
-              </a>
+            <a class="nav-link" href="/news">
+              news
+              
+            </a>
           </li>
-          
-          
-          
-          
-          
+          <!-- teaching -->
           <li class="nav-item ">
-              <a class="nav-link" href="/teaching/">
-                teaching
-                
-              </a>
+            <a class="nav-link" href="/teaching">
+              teaching
+              
+            </a>
           </li>
-          
-          
           <!-- CV -->
           <li class="nav-item ">
               <a class="nav-link" href="/files/CV.pdf"> 
@@ -152,37 +125,23 @@
     <!-- Content -->
 
     <div class="container mt-5">
-      <div class="post">
+      <h2> <b> research </b> </h2>
+<p><br></p>
 
-  <header class="post-header">
-    <h1 class="post-title">research</h1>
-    <p class="post-description"></p>
-  </header>
+<p>I am broadly interested in statistical learning theory. In particular, I have been thinking about problems related to high dimensional interpolation, benign overfitting, and implicit regularization.</p>
 
-  <article>
-    <p><img src="/assets/img/zion.png" class="img-fluid z-depth-1 rounded"> 
-<br></p>
+<p><u> High dimensional interpolation &amp; benign overfitting </u></p>
 
-<p>In modern statistical and machine learning applications, the number of parameters in a model can far exceed the number of training samples. In fact, many state-of-the-art results are attained by over-parameterized models that are trained with little to no regularization (such as deep neural network). At the same time, these models are powerful enough to perfectly memorize the training labels. In contrast, the traditional understanding of ML is that models with high complexity and low training error tend to overfit. This raises an important question:</p>
+<p>When the number of parameters in a prediction model is greater than the number of training samples, there usually exist infinitely many solutions that lead to zero training error (interpolation). In the context of high dimensional linear regression, we study the out-of-sample prediction error of the interpolator with the least Euclidean norm. More generally, we can consider ridge and LASSO regression as the amount of regularization goes to zero and other loss functions such as the squared hinge loss to include binary classification.</p>
 
-<center> <b> Why won't an over-parameterized model overfit to the training data? </b> </center>
+<p>An interesting phenomena about these predictors is that they can sometimes achieve good out-of-sample performance despite overfitting to noisy observations. Moreover, contrary to the classical bias-variance trade-off, increasing the number of variables in the model can lead to better prediction accuracy. We develop a generalization theory to explain benign overfitting based on the technique of uniform convergence and we show that the norm of a predictor is the key to good generalization as the number of variables approaches infinity.</p>
 
-<p><br>
-With the hope of bridging the gap between classical learning theory with modern applied ML, I have been trying to understand interpolation learning through the prism of <i> implicit regularization  </i> and <i> uniform convergence.</i></p>
+<p>Understanding benign overfitting in generalized linear models is related to the theoretical study of deep neural networks because big interpolating networks also seem to generalize well in practice. This line of work is done as part of <a href="https://deepfoundations.ai/" target="_blank" rel="noopener noreferrer"> the Collaboration on the Theoretical Foundations of Deep Learning. </a></p>
 
-<ul>
-  <li>
-    <p>On the implicit regularization side, I am interested in the effect of different parameterization and hyperparameter choices, such as network architecture, learning rate, minibatch size and early stopping, on the solution found by training. The idea is that when the model is over-parameterized, there usually exists infinitely many solutions that lead to small training error, but some of them can generalize better than others. It turns out that the choice of optimizer and how we optimize the loss objective is crucial to finding solutions with good generalization properties. One way to reconcile interpolation learning with bias-variance tradeoff is that SGD can find simple solutions in terms of some dimension-free complexity measure. For example, it is known that gradient methods implicitly find the interpolator with the least Euclidean norm in linear regression. Problems that I have been thinking about include the implicit regularization in early-stopped linear models, ReLU regression and matrix factorization.</p>
-  </li>
-  <li>
-    <p>On the uniform convergence side, the goal of my recent research is to show how a dimension-free complexity measure like Euclidean norm can be used to tightly control the population error for interpolating, or near-interpolating, linear predictors in extremly high dimensions, and to lay a principled theoretical foundation for understanding the generalization of over-parameterized non-linear models. Even though gradient methods find the minimal norm interpolator in linear regression, the norm of the minimal norm interpolator still has to diverge with the number of training samples when there is noise. As a result, establishing tight estimates for the population error requires a very precise bound with the optimal dependence on model complexity. Our papers accomplish this by a novel application of the Gaussian comparison inequality, and the technical details of our contribution can be found on the <a href="/publications"> publication </a> page.</p>
-  </li>
-</ul>
+<p><u> Implicit regularization of optimization algorithms </u></p>
 
+<p>Since there are infinitely many solutions with zero training error in the over-parameterized regime, the choice of optimization algorithm plays a crucial role in determining which solution we will find. For example, gradient descent finds the minimal Euclidean norm solution in linear regression whereas coordinate descent will converge to a sparse solution. I am also interested in the effect of early stopping and parameterization on the solution found by training. Problems that I have been thinking about include the implicit regularization in early-stopped linear models, ReLU regression and matrix factorization.</p>
 
-  </article>
-
-</div>
 
     </div>
 
