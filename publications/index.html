@@ -35,7 +35,7 @@
 
 <!-- Styles -->
 
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔥</text></svg>">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎲</text></svg>">
 
 <link rel="stylesheet" href="/assets/css/main.css">
 <link rel="canonical" href="http://localhost:4000/publications/">
@@ -96,7 +96,6 @@
               
             </a>
           </li>
-
           <!-- news -->
           <li class="nav-item ">
             <a class="nav-link" href="/news">
@@ -104,7 +103,6 @@
               
             </a>
           </li>
-
           
             <div class="toggle-container">
               <a id="light-toggle">
@@ -136,7 +134,346 @@
 
 
   <h2 class="year">2023</h2>
-  <ol class="bibliography"><li>
+  <ol class="bibliography">
+<li>
+<div class="row">
+  <div class="col-sm-2 abbr">
+  
+    
+    <abbr class="badge">Thesis</abbr>
+    
+  
+  </div>
+
+  <div id="thesis" class="col-sm-8">
+    
+      <div class="title">A Statistical Learning Theory for Models with High Complexity</div>
+      <div class="author">
+        
+          
+          
+          
+          
+          
+          
+            
+            Lijia Zhou
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>PhD thesis (Department of Statistics, University of Chicago)</em>
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+    
+    
+    
+    
+    
+      <a href="http://proxy.uchicago.edu/login?url=https://www.proquest.com/dissertations-theses/statistical-learning-theory-models-with-high/docview/2827829395/se-2?accountid=14657%0A" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">Official</a>
+    
+    
+    
+    
+    
+    
+    
+      
+      <a href="/files/thesis_presentation.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank">Slides</a>
+      
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>Understanding why high-dimensional estimators can generalize beyond finite training samples is a fundamental problem in statistical learning theory. The traditional intuition, as suggested by Occam’s razor, is that models with low complexity tend to generalize better. We can often find simple models that explain the training data well if the high-dimensional data distribution has some hidden low-dimensional structure (for example, sparse linear regression and low-rank matrix recovery). However, contrary to our traditional intuition, complex models which interpolate noisy training labels can also enjoy good generalization in some settings. This phenomenon, which we call "interpolation learning," has significantly challenged our theoretical foundation of statistical learning. In this thesis, we present a novel Moreau envelope generalization theory to establish the concentration of measure in high dimensions. Since our result can precisely quantify the role of model complexity in generalization error, we can establish strong consistency results even though the norm of the high-dimensional interpolants that we consider diverges. In addition to proving sharp non-asymptotic bounds for interpolants in various contexts, we also recover versions of classical results from the compressed sensing and high-dimensional statistics literature. Applications of our theory include kernel ridge regression, max-margin classification, phase retrieval, matrix sensing, and some simple neural networks. </p>
+    </div>
+    
+
+    <!-- Hidden bibtex block -->
+    
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+  <div class="col-sm-2 abbr">
+  
+    
+    <abbr class="badge">arXiv</abbr>
+    
+  
+  </div>
+
+  <div id="agnostic-krr" class="col-sm-8">
+    
+      <div class="title">An Agnostic View on the Cost of Overfitting in (Kernel) Ridge Regression</div>
+      <div class="author">
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                Lijia Zhou,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+            
+              
+                
+                
+          
+          
+          
+            
+              
+                
+                  <a href="https://james-simon.github.io/" target="_blank" rel="noopener noreferrer">James B. Simon</a>,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+            
+              
+                
+                
+          
+          
+          
+            
+              
+                
+                  <a href="https://sites.google.com/view/galvardi/home" target="_blank" rel="noopener noreferrer">Gal Vardi</a>,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+            
+              
+                
+                
+          
+          
+          
+            
+              
+                
+                  and <a href="https://nati.ttic.edu/index.html" target="_blank" rel="noopener noreferrer">Nathan Srebro</a>
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>arXiv preprint</em>
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+    
+    
+      <a href="http://arxiv.org/abs/" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">arXiv</a>
+    
+    
+    
+    
+    
+      
+      <a href="/files/" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
+      
+    
+    
+    
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>We study the cost of overfitting in noisy kernel ridge regression (KRR), which we define as the ratio between the test error of the interpolating ridgeless model and the test error of the optimally-tuned model. We take an “agnostic” view in the following sense: we consider the cost as a function of sample size for any target function, even if the sample size is not large enough for consistency or the target is outside the RKHS. We analyze the cost of overfitting under a Gaussian universality ansatz using recently derived (non-rigorous) risk estimates in terms of the task eigenstructure. Our analysis provides a more refined characterization of benign, tempered and catastrophic overfitting (qv Mallinar et al. 2022).</p>
+    </div>
+    
+
+    <!-- Hidden bibtex block -->
+    
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+  <div class="col-sm-2 abbr">
+  
+    
+    <abbr class="badge">arXiv</abbr>
+    
+  
+  </div>
+
+  <div id="uc-sqrt-lipschitz" class="col-sm-8">
+    
+      <div class="title">Uniform Convergence with Square-Root Lipschitz Loss</div>
+      <div class="author">
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                Lijia Zhou,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+            
+              
+                
+                
+          
+          
+          
+            
+              
+                
+                  <a href="https://scholar.google.com/citations?user=RDHmWxcAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Zhen Dai</a>,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+            
+              
+                
+                
+          
+          
+          
+            
+              
+                
+                  <a href="https://frkoehle.github.io/" target="_blank" rel="noopener noreferrer">Frederic Koehler</a>,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+            
+              
+                
+                
+          
+          
+          
+            
+              
+                
+                  and <a href="https://nati.ttic.edu/index.html" target="_blank" rel="noopener noreferrer">Nathan Srebro</a>
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>arXiv preprint</em>
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+    
+    
+      <a href="http://arxiv.org/abs/" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">arXiv</a>
+    
+    
+    
+    
+    
+      
+      <a href="/files/" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
+      
+    
+    
+    
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>We establish generic uniform convergence guarantees for Gaussian data in terms of the Rademacher complexity of the hypothesis class and the Lipschitz constant of the square root of the scalar loss function. We show how these guarantees substantially generalize previous results based on smoothness (Lipschitz constant of the derivative), and allow us to handle the broader class of square-root-Lipschitz losses, which includes also non-smooth loss functions appropriate for studying phase retrieval and ReLU regression, as well as rederive and better understand “optimistic rate” and interpolation learning guarantees.</p>
+    </div>
+    
+
+    <!-- Hidden bibtex block -->
+    
+  </div>
+</div>
+</li>
+<li>
 <div class="row">
   <div class="col-sm-2 abbr">
   
@@ -269,7 +606,8 @@
     
   </div>
 </div>
-</li></ol>
+</li>
+</ol>
 
   <h2 class="year">2022</h2>
   <ol class="bibliography"><li>
@@ -399,7 +737,7 @@
     
     
     
-      <a href="https://nips.cc/virtual/2022/poster/53804" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">Official</a>
+      <a href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/861f7dad098aec1c3560fb7add468d41-Abstract-Conference.html" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">Official</a>
     
     
       
